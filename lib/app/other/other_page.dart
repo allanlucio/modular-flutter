@@ -17,7 +17,7 @@ class _HomePageState extends State<OtherPage> {
         title: Text("Other"),
       ),
       body: Center(
-        child: Text(homeController.text)
+        child: Text("")
         ),
       
     );
