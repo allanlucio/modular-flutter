@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_modular_class/app/shared/models/pokemon_model.dart';
+import 'package:flutter_modular_class/app/modules/home/models/pokemon_model.dart';
+
 
 class PokeRepository {
   final Dio dio;
@@ -8,6 +9,7 @@ class PokeRepository {
 
   Future<List<PokemonModel>> getAllPokemons() async {
     var response = await dio.get('/pokemon');
+    
     List<PokemonModel> list = List();
     for (var json in response.data["results"]) {
       list.add(PokemonModel(json['name']));

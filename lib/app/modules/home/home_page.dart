@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:flutter_modular_class/app/pages/home_controller.dart';
-import 'package:flutter_modular_class/app/shared/models/pokemon_model.dart';
+import 'package:flutter_modular_class/app/modules/home/home_controller.dart';
+import 'package:flutter_modular_class/app/modules/home/models/pokemon_model.dart';
+
 
 class HomePage extends StatefulWidget {
   @override
